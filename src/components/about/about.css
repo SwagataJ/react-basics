@@ -77,13 +77,13 @@
 }
 
 .about__icon{
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--color-primary);
     margin:1rem;
 }
 
 .about__card h5{
-    font-size: 0.95rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: var(--color-primary);
     margin:0;

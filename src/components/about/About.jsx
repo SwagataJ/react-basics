@@ -1,6 +1,5 @@
 import React from 'react'
 import './about.css'
-import ME from "../../assets/DSC04290.jpg"
 import {GiAchievement} from "react-icons/gi"
 import {MdScore} from "react-icons/md"
 import {IoIosFolder} from "react-icons/io"
@@ -11,11 +10,7 @@ const about = () => {
       <h5>Get to Know</h5>
       <h2>About me</h2>
       <div class="container about__container">
-        {/* <div class="about__me">
-          <div class="about__me__image">
-            <img src={ME} alt="" />
-          </div>
-        </div> */}
+        
 
         <div class="about__content">
           <div class="about__cards">
@@ -44,10 +39,9 @@ const about = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos quisquam,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos quisquam,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos quisquam,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos quisquam,
+          I am a third-year B.Tech CSE student seeking a full-time position where I can apply my knowledge and skills for
+continuous improvement. </p><p>I have broad experience in software development and managerial skills, and I like writing
+and reading! I've delved into software development, and Machine Learning, and look forward to more experiences!
           </p>
         <a href="#contact" class="btn btn-primary">Lets Talk</a>
         </div>
