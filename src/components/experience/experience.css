@@ -1,0 +1,103 @@
+.experience__container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+}
+
+.experience__card{
+    background:var(--color-bg-variant);
+    border:1px solid transparent;
+    border-radius:2rem;
+    padding:2.4rem 5rem;
+    transition:var(--transition);
+    padding-bottom:6rem;
+}
+
+.experience__card:hover{
+    background:transparent;
+    border:1px solid var(--color-primary);
+}
+
+.experience__card >  h3{
+    text-align:center;
+    margin-bottom:2rem;
+    color:var(--color-light);
+    font-size:2.5rem;
+}
+
+.experience_content{
+    display:grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap:2rem;
+}
+
+.experience_details{
+    text-align:center;
+    font-size:1.5rem;
+    grid-column: span 2;
+}
+
+.experience_details:nth-last-child(1):nth-child(odd) {
+	grid-column: 2 / span 2;
+}
+
+.experience_details > h4{
+    font-size:1.5rem;   
+}
+
+.experience_details > small{
+    font-size:1rem;
+    color:var(--color-light);
+}
+
+.experience__card:hover .experience__icons{
+    color:var(--color-primary);
+}
+
+/* ===================MEDIUM DEVICES=================== */
+@media screen and (max-width: 1024px){
+    .experience__container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ===================SMALL DEVICES=================== */
+@media screen and (max-width: 600px){
+    .experience__container{
+        gap:2.5rem;
+    }
+    
+}
+
+
+.experience__card{
+    padding:1.4rem 3rem;
+}
+
+.experience__card >  h3{
+    text-align:center;
+    margin-bottom:1.5rem;
+    color:var(--color-light);
+    font-size:1.5rem;
+}
+
+.experience_content{
+    display:grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap:1.5rem;
+}
+
+.experience_details{
+    font-size:1.5rem;
+}
+
+
+.experience_details > h4{
+    font-size:1.1rem;   
+}
+
+.experience_details > small{
+    font-size:0.8rem;
+    font-weight:bold
+}
