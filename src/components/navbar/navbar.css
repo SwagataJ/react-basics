@@ -32,3 +32,20 @@ nav a.active{
     background: var(--color-bg);
     color: var(--color-light);
 }
+
+
+/* ==================MEDIUM DEVICES================== */
+@media screen and (max-width: 1024px){
+    nav a{
+        font-size:1.2rem;
+        font-weight:500;
+    }
+}
+
+/* =====================SMALL DEVICES================== */  
+@media screen and (max-width: 600px){
+    nav a{
+        font-size:1rem;
+        font-weight:500;
+    }
+}

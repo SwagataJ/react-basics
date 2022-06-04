@@ -11,11 +11,11 @@ const Navbar = () => {
   const [activeNav,setActiveNav]=useState('#')
   return (
     <nav>
-      <a href="#" onclick={()=>setActiveNav('#')} class={activeNav==='#'?'active':''}><HiOutlineHome /></a>
-      <a href="#about" onclick={()=>setActiveNav('#about')} class={activeNav==='#about'?'active':''}><FiUser /></a>
-      <a href="#experience"onclick={()=>setActiveNav('#experience')} class={activeNav==='#experience'?'active':''}><MdWorkOutline /></a>
-      <a href="#services" onclick={()=>setActiveNav('#services')} class={activeNav==='#services'?'active':''}><MdDesignServices /></a>
-      <a href="#contact" onclick={()=>setActiveNav('#contact')} class={activeNav==='#contact'?'active':''}><AiOutlineContacts  /></a>
+      <a href="#" onclick={()=>setActiveNav('#')} class={activeNav==='#'?'active':''}><HiOutlineHome class="navbar__icons" /></a>
+      <a href="#about" onclick={()=>setActiveNav('#about')} class={activeNav==='#about'?'active':''}><FiUser class="navbar__icons" /></a>
+      <a href="#experience"onclick={()=>setActiveNav('#experience')} class={activeNav==='#experience'?'active':''}><MdWorkOutline class="navbar__icons" /></a>
+      <a href="#services" onclick={()=>setActiveNav('#services')} class={activeNav==='#services'?'active':''}><MdDesignServices class="navbar__icons" /></a>
+      <a href="#contact" onclick={()=>setActiveNav('#contact')} class={activeNav==='#contact'?'active':''}><AiOutlineContacts  class="navbar__icons" /></a>
     </nav>
   )
 }
