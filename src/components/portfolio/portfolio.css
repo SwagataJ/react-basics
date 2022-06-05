@@ -56,14 +56,21 @@ a{
     }
     .portfolio__card{
         width:70vw;
-        height:25vh;
-        left:5vw;
+        height:20vh;
+        left:0vw;
         justify-content:center;
         text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding-top:10rem; */
     }
     .portfolio__card > a{
-        margin-top:1.5rem;
-        
+        margin-top:0;
+        font-size:1.2rem;
+    }
+
+    .portfolio__card h4{
+        font-size:0.7rem;
     }
 
 }
