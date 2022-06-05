@@ -1,0 +1,144 @@
+.service__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0.5rem;
+    /* background:var(--color-primary); */
+    /* padding:2rem; */
+}
+
+.service__card {
+    background: var(--color-bg);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+}
+
+.service__icon {
+    font-size: 3rem;
+    color: var(--color-white);
+    margin: 1rem;
+}
+
+.service__card:hover {
+    background: var(--color-primary-variant);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-color: var(--color-primary);
+    cursor: default;
+}
+
+.service__card h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.service__card small {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+/* .service__card:hover .service__icon{
+    color:white;
+}
+
+.service__card:hover h5{
+    color:white;
+}
+
+.service__card:hover small{
+    color:var(--color-primary);
+} */
+
+.to_be_replaced {
+    position: relative;
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.to_replace {
+    position: relative;
+    z-index: 1;
+    display: none;
+    transition: var(--transition);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.service__card:hover .to_be_replaced {
+    display: none;
+}
+
+.service__card:hover .to_replace {
+    display: block;
+}
+
+
+/*===========Medium Screen================*/
+@media screen and (max-width:1024px) {
+    .service__container {
+        /* background:red; */
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .service__me {
+        width: 50%;
+        margin: 2rem auto 4rem;
+        justify-content: center;
+    }
+
+    .service__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin: 0.5rem;
+        padding: 2rem;
+        justify-content: center;
+    }
+
+    .service__content p {
+        text-align: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .service__content a {
+        margin-top: 1.5rem;
+        padding: 0.75rem 1rem 0.75rem 1rem;
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+}
+
+/*===========Small Screen================*/
+@media screen and (max-width:600px) {
+
+    .service__cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        margin: 0.5rem;
+        padding: 2rem;
+        justify-content: center;
+    }
+
+    .service__content p {
+        display: none;
+        font-size: 1rem;
+    }
+
+    .service__content a {
+        margin-top: 1.5rem;
+        padding: 0.75rem 1rem 0.75rem 1rem;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
