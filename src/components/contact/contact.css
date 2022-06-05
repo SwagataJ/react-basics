@@ -1,0 +1,110 @@
+.container.contact__container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left_container {
+    justify-content: center;
+    margin-right:3rem;   
+    align-items:center;
+    /* background-color: red; */
+}
+
+.contact__card {
+    /* text-align: center; */
+    border-radius: 30px;
+    background-color: var(--color-bg-variant);
+    padding: 1rem;
+    color: var(--color-light);
+    margin-bottom:1rem;
+    height:15vh;
+    width:45vh;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:4vh;
+}
+
+.contact__card:hover{
+    border:1px solid var(--color-primary);
+    background-color: var(--color-bg);
+}
+
+.contact__card:hover .contact_card_content>h3{
+    color: var(--color-primary);
+}
+
+.contact_card_content{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    /* background-color:red; */
+    text-align: center;
+    
+}
+.contact_card_content>h3{
+    font-size:2rem;
+    color:white;
+}
+
+.contact_card_content>p{
+    font-size:1rem;
+    color:var(--color-light);
+}
+
+
+.right_container{
+    display:flex;
+    flex-direction:column;
+    gap:1.2rem;
+}
+
+input ,textarea{
+    border:2px solid var(--color-primary);
+    background:transparent;
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+    padding:1.5rem;
+    resize:none;
+    border-radius:0.75rem;
+}
+
+
+/* ==================MEDIUM DEVICES =================== */
+
+@media screen and (max-width:1024px) {
+    .container.contact__container{
+        display:grid;
+        grid-template-columns: 100%;
+        gap:2rem;
+    }
+    .left_container{
+        margin-right:0;
+    }
+    .contact__card{
+        width:100%;
+        height:auto;
+        margin-bottom:2rem;
+
+    }
+    .contact_card_content{
+        /* margin-top:auto; */
+        /* margin-bottom:auto; */
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        /* background-color: red; */
+    }
+    .contact_card_content>h3{
+        font-size:1.5rem;
+    }
+}
+
+
+/* =================SMALL DEVICES=================== */
+@media screen and (max-width:600px) {
+    .container.contact__container{
+        width:var(--container-width-sm);
+    }
+}
