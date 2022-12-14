@@ -16,6 +16,20 @@ const services = () => {
           <article class="service__card">
 
             <article class="to_be_replaced">
+              <GiAbstract021 class="service__icon" />
+              <h5>SDE,</h5><h5>Wells Fargo</h5>
+              <small>May 2022-July 2022</small>
+            </article>
+
+            <article class="to_replace">
+              <p>Worked as a Software Development Intern, in a team to develop tools that could be used to automate vulnerability organization.</p>
+            </article>
+
+          </article>
+
+          <article class="service__card">
+
+            <article class="to_be_replaced">
               <GiAchievement class="service__icon" />
               <h5>National Secretary, IAESTE India</h5>
               <small>Aug 2021-Aug 2022</small>
@@ -32,7 +46,7 @@ const services = () => {
             <article class="to_be_replaced">
               <MdScore class="service__icon" />
               <h5>SDE</h5><h5>Netlab India</h5>
-              <small>June-Aug 2021</small>
+              <small>June 2021-Aug 2021</small>
             </article>
 
             <article class="to_replace">
@@ -47,7 +61,7 @@ const services = () => {
             <article class="to_be_replaced">
               <IoIosFolder class="service__icon" />
               <h5>ITS Team Member, IAESTE India</h5>
-              <small>Feb-May 2021</small>
+              <small>Feb 2021-May 2021</small>
             </article>
 
             <article class="to_replace">
@@ -71,19 +85,6 @@ const services = () => {
 
           </article>
 
-          <article class="service__card">
-
-            <article class="to_be_replaced">
-              <GiAbstract021 class="service__icon" />
-              <h5>Writer,</h5><h5>Newslanded</h5>
-              <small>September 2019-August 2020</small>
-            </article>
-
-            <article class="to_replace">
-              <p>Wrote more than 50 articles in the field of Technology after collaborating from multiple sources.</p>
-            </article>
-
-          </article>
 
           <article class="service__card">
 
